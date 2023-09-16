@@ -5,11 +5,10 @@ import About from './Page/About/About'
 import Project from './Page/Project/Project'
 import Contact from './Page/Contact/Contact'
 
-function App() {
-
+const HHome = () => {
   return (
     <div>
-      <Home />
+      <Home/>
       <About />
       <div className='mt-32'>
         <Project />
@@ -18,7 +17,7 @@ function App() {
         <Contact />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default HHome;

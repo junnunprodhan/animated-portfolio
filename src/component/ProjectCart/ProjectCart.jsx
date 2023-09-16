@@ -35,7 +35,7 @@ const ProjectCart = ({ cart }) => {
                     </div>
                 </div>
                 <div className=' absolute bottom-3 w-full'>
-                    <Link><button onClick={() => handleClick(cart.link)} className='bg-[#00FFFF] w-full font-bold text-black btn btn-sm hover:bg-cyan-200 '>Live Link</button></Link>
+                    <Link><button onClick={() => handleClick(cart.link)} className='bg-[#00FFFF] w-full font-bold text-black btn btn-sm hover:bg-white '>Live Link</button></Link>
                 </div>
             </div>
         </div>
