@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Select from 'react-select';
 import usePostProject from '../../Hooks/usePostProject/usePostProject';
-import { useImage } from '../../Hooks/useImage/useImage';
+import { HostImg } from '../../Hooks/useImage/useImage';
 import toast from 'react-hot-toast';
 
 const AddCard = () => {
@@ -15,6 +15,7 @@ const AddCard = () => {
         { value: 'Node js', label: 'Node js' },
         { value: 'Express js', label: 'Express js' },
         { value: 'MongoDb', label: 'MongoDb' },
+        { value: 'React Metarial', label: 'React Metarial' },
     ]
 
     const [selectedOption, setSelectedOption] = useState('All');
@@ -37,20 +38,35 @@ const AddCard = () => {
         const option2 = selectedOptions2
         const description = form.description.value
         const image = form.file.files[0]
-        useImage(image).then(data => {
+        HostImg(image).then(data => {
             if (data.success) {
                 const img = data.data.display_url
-                const project = { name, link, description, option, option2,img }
-                usePostProject(project).then(data => {
+                const project = { name, link, description, option, option2, img }
+                fetch('https://portfolio-server-297y.onrender.com/addProject',{
+                // fetch('https://portfolio-server-297y.onrender.com/addProject',{
+                    method: 'POST',
+                    headers:{
+                        'content-type':'application/json'
+                    },
+                    body: JSON.stringify(project)
+                })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
                     toast.success(`${name} added successful`)
                 })
+                // usePostProject(project)
+                    // .then(data => {
+                    //     console.log(data)
+                    //     toast.success(`${name} added successful`)
+                    // })
             }
         })
     }
 
     return (
         <form onSubmit={HandleToSubmit}>
-            <div className='flex gap-6'>
+            <div className='flex gap-6 mx-3'>
                 <input type="text" name='name' placeholder="Type Your Project Name" className="input border-[#00FFFF] rounded-sm w-6/12  font-mono font-bold" />
                 <input type="text" name='link' placeholder="Type Your Project Live Link" className="input border-[#00FFFF] rounded-sm w-6/12  font-mono font-bold" />
             </div>

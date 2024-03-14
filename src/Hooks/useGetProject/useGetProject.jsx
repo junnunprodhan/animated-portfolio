@@ -1,9 +1,8 @@
-import axios from 'axios';
-import React from 'react';
 
-const useGetProject = async() => {
-   const res = await axios.get('http://localhost:5000/project')
-   return res.data;
+import axios from 'axios';
+const useGetProject = async () => {
+  const res = await axios.get('https://portfolio-server-297y.onrender.com/portfolioProject')
+  return res.data;
 };
 
 export default useGetProject;

@@ -1,12 +1,17 @@
-import axios from "axios";
 
-const key = import.meta.env.VITE_IMAGE_KEY;
-console.log(key)
+const image_hosting_token = import.meta.env.VITE_IMAGE_KEY;
 
-export const useImage = async (image) => {
-    const IMAGE_HOSTING_URL = `https://api.imgbb.com/1/upload?key=${key}`
+export const HostImg = async (image) => {
+    const url = `https://api.imgbb.com/1/upload?key=${image_hosting_token}`
     const formData = new FormData()
-    formData.append('image', image)
-    const res = await axios.post(IMAGE_HOSTING_URL, formData)
-    return res.data
-};
+    formData.append("image", image)
+    const response = await fetch(url, {
+        method: 'POST',
+        body: formData
+    })
+    const data = await response.json()
+    console.log(data)
+    return data
+
+
+}
