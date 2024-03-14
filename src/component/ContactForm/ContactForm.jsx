@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import { useAnimation, motion, useInView } from "framer-motion";
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("xrgwllzg");
+  const [state, handleSubmit] = useForm("xjvnodlw");
   if (state.succeeded) {
     toast.success("message send successful");
   }
@@ -63,7 +63,7 @@ const ContactForm = () => {
             id="email"
             name="email"
             placeholder="Enter your email"
-            className="input input-bordered w-full border-[#00FFFF] rounded-sm "
+            className="input input-bordered text-black w-full border-[#00FFFF] rounded-sm "
           />
         </div>
         <div className="form-control w-full ">

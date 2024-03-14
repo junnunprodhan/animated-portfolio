@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-const img = "https://i.ibb.co/HzH0HQn/Remini20220221000233124.jpg";
+const img = "https://i.ibb.co/cYwmV7k/rsz-421432016-224067600772623-2294725046532783139-n.jpg";
 import "./edin.css";
 import { FaFacebook, FaFlag } from "react-icons/fa";
 import { MdCall, MdEmail, MdLocationPin } from "react-icons/md";
@@ -34,12 +34,12 @@ const AboutAuthor = () => {
     >
       <div className="space-y-5 md:w-11/12 mx-auto">
         <p className=" text-xl md:text-3xl font-['Poppins'] text-center">
-          I am a MERN Stack Web Developer
+          I am a Full Stack Web Developer
         </p>
         <hr className=" border-[1px] mt-3" />
         <p className="font-['Poppins'] text-start">
-          I am Kawsar Hasan Joy form Bangladesh. I am Learning Programming every
-          single day. I have some projects with MERN Stack. I am a hard working
+          I am Junnun Prodhan form Bangladesh. I am Learning Programming every
+          single day. I have some projects with Full Stack. I am a hard working
           person. I always learn new technologies everyday.
         </p>
         <div className=" flex flex-col gap-3">
@@ -49,30 +49,30 @@ const AboutAuthor = () => {
           </div>
           <div className=" flex gap-4 items-center hover:text-blue-800 cursor-pointer">
             <MdCall size={30} />
-            <p className=" text-xl">+8801405951898</p>
+            <p className=" text-xl">+8801884248898</p>
           </div>
           <div className=" flex gap-4 items-center hover:text-blue-800 cursor-pointer">
             <MdEmail size={30} />
-            <p className=" text-xl">kawsarhasanjoy342@gmail.com</p>
+            <p className=" text-xl">junnunprodhan@gmail.com</p>
           </div>
           <div className=" flex gap-4 items-center">
             <MdLocationPin size={30} />
-            <p className=" text-xl">Gouripur,Mymensingh</p>
+            <p className=" text-xl">Matlab,Chandpur</p>
           </div>
         </div>
         <div className=" flex gap-4 h-10 items-center ">
-          <Link to={"https://github.com/kawsarhasanjoy1"}>
+          <Link to={"https://github.com/junnunprodhan"}>
             {" "}
             <p className="hover:bg-red-600 hover:text-white hover:mb-3 hover:duration-1000 hover:rounded-full p-3">
               <BsGithub className="" size={30} />
             </p>
           </Link>
-          <Link to={"https://www.linkedin.com/in/kawsar-hasan-joy-a86652287/"}>
+          <Link to={"https://www.linkedin.com/in/md-junnun-prodhan/"}>
             <p className="hover:bg-red-600 hover:text-white hover:mb-3 hover:duration-1000 hover:rounded-full p-3">
               <BsLinkedin className="" size={30} />
             </p>
           </Link>
-          <Link to={"https://www.facebook.com/profile.php?id=100077015388756"}>
+          <Link to={"https://www.facebook.com/profile.php?id=100010419976460"}>
             <p className="hover:bg-red-600 hover:text-white hover:mb-3 hover:duration-1000 hover:rounded-full p-3">
               <FaFacebook className="" size={30} />
             </p>

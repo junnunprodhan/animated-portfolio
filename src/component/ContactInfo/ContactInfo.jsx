@@ -55,8 +55,8 @@ const ContactInfo = () => {
             <p className=" font-bold font-[Radio Canada,sans-serif] text-xl mb-3 ">
               Contact on phone
             </p>
-            <p className=" hover:text-[#00FFFF]">+8801405951898</p>
-            <p className=" hover:text-[#00FFFF]">+8801967154464</p>
+            <p className=" hover:text-[#00FFFF]">+8801884248898</p>
+            <p className=" hover:text-[#00FFFF]">+8801648319117</p>
           </div>
         </div>
 
@@ -71,10 +71,10 @@ const ContactInfo = () => {
               Contact on mail
             </p>
             <p className=" hover:text-[#00FFFF] ">
-              kawsarhasahjoy342@gmail.com
+              junnunprodhan@gmail.com
             </p>
             <p className=" hover:text-[#00FFFF]">
-              kawsarhasahjoy1234@gmail.com
+            junnunprodhan89@gmail.com
             </p>
           </div>
         </div>
@@ -89,7 +89,7 @@ const ContactInfo = () => {
             <p className=" font-bold font-[Radio Canada,sans-serif] text-xl mb-3 ">
               Contact address
             </p>
-            <p className=" hover:text-[#00FFFF]">Gouripur,Mymensingh</p>
+            <p className=" hover:text-[#00FFFF]">Matlab,Chandpur</p>
           </div>
         </div>
       </div>

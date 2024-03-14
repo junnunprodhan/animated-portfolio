@@ -21,13 +21,15 @@ const Header = () => {
       document.removeEventListener("mousedown", closeDropDown);
     };
   }, []);
+  const img = "https://i.ibb.co/YXQyPBD/md-png.png";
 
   return (
     <>
       <div className=" fixed hidden md:block z-40">
         <nav className="flex items-center justify-between  bg-[#393E46] w-[1260px] py-2 text-white mb-24 pr-28 fixed font-[Poppins] font-bold">
-          <div className="scale-100 cursor-pointer rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
-            <h2 className=" flex items-center gap-1"> Kawsar Hasan <p className=" text-red-400"> Joy</p></h2>
+          <div className="scale-100 cursor-pointer flex rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
+            <img className="rounded-full" src={img} width="40" height="40" />
+            <h2 className=" flex items-center gap-1"> Junnun <p className=" text-red-400"> Prodhan</p></h2>
           </div>
           <ul className="hidden items-center justify-between gap-10 md:flex">
             <li className="group flex  cursor-pointer flex-col">

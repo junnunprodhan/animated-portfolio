@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-const img = "https://i.ibb.co/ts6fs6p/Remini20220221000233124.jpg";
+const img = "https://i.ibb.co/cYwmV7k/rsz-421432016-224067600772623-2294725046532783139-n.jpg";
 import "./Home.css";
 import { FaDownload, FaFacebook } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -34,7 +34,7 @@ const Home = () => {
             className=" md:w-[400px] md:h-[400px] object-cover border-red-400 border-2 hidden md:block rounded-full"
             src={img}
             alt=""
-            title="Kawsar Hasan Joy"
+            title="Md Junnun Prodhan"
           />
         </motion.div>
 
@@ -78,21 +78,21 @@ const Home = () => {
           </p>
 
           <div className=" flex gap-4 h-10 items-center ">
-            <Link to={"https://github.com/kawsarhasanjoy1"}>
+            <Link to={"https://github.com/junnunprodhan"}>
               {" "}
               <p className="hover:bg-red-600 hover:text-white hover:mb-3 hover:duration-1000 hover:rounded-full p-3">
                 <BsGithub className="" size={30} />
               </p>
             </Link>
             <Link
-              to={"https://www.linkedin.com/in/kawsar-hasan-joy-a86652287/"}
+              to={"https://www.linkedin.com/in/md-junnun-prodhan/"}
             >
               <p className="hover:bg-red-600 hover:text-white hover:mb-3 hover:duration-1000 hover:rounded-full p-3">
                 <BsLinkedin className="" size={30} />
               </p>
             </Link>
             <Link
-              to={"https://www.facebook.com/profile.php?id=100077015388756"}
+              to={"https://www.facebook.com/profile.php?id=100010419976460"}
             >
               <p className="hover:bg-red-600 hover:text-white hover:mb-3 hover:duration-1000 hover:rounded-full p-3">
                 <FaFacebook className="" size={30} />
@@ -109,12 +109,15 @@ const Home = () => {
                 Download Resume
               </p>
             </button> */}
-            <button className="text-xl box-border border-2 border-red-700 w-52 h-10 bg-red-600 text-white relative group">
-              <span className="pr-8">Download Resume</span>
-              <span className="bg-red-400 absolute right-0 top-0  h-full flex items-center justify-center px-1 group-hover:duration-300 group-hover:w-full w-8 duration-300">
-                <FaDownload />
-              </span>
-            </button>
+            
+            <button className="text-xl box-border border-2 border-red-700 w-52 h-10 hover:bg-red-400 bg-red-600 text-white relative group">
+  <a href="https://drive.google.com/file/d/1kJ-ST4AjV8UdHPJcD6Mc9WNWqXoeO694/view?usp=drive_link" download>
+    <span className="pr-8">Download Resume</span>
+  </a>
+  {/* <span className="bg-red-400 absolute right-0 top-0  h-full flex items-center justify-center px-1 group-hover:duration-300 group-hover:w-full w-8 duration-300">
+    <FaDownload />
+  </span> */}
+</button>
           </div>
         </div>
       </motion.div>
@@ -123,3 +126,16 @@ const Home = () => {
 };
 
 export default Home;
+
+
+// // <button className="text-xl box-border border-2 border-red-700 w-52 h-10 bg-red-600 text-white relative group">
+//               {/* <span className="pr-8">Download Resume</span> */}
+//               <Link
+//                to={"https://www.facebook.com/profile.php?id=100010419976460"}
+//               >
+//               <span className="pr-8">Download Resume</span>
+//         </Link>
+//               <span className="bg-red-400 absolute right-0 top-0  h-full flex items-center justify-center px-1 group-hover:duration-300 group-hover:w-full w-8 duration-300">
+//                 <FaDownload />
+//               </span>
+//             </button>
