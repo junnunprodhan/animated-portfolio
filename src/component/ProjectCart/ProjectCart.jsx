@@ -32,7 +32,7 @@ const ProjectCart = ({ cart }) => {
       ref={ref}
       data-aos="fade-up"
       data-aos-duration="1000"
-      className={`relative  border border-gray-200 rounded-lg shadow  bg-gray-800 dark:border-gray-700  hover:-translate-y-2  hover:transition-colors hover:delay-300 hover:duration-500 mr-6 mt-20 pb-7 h-[600px] text-white`}
+      className={`relative  border border-gray-200 rounded-lg shadow  bg-gray-800 dark:border-gray-700  hover:-translate-y-2  hover:transition-colors hover:bg-white hover:text-black hover:delay-300 hover:duration-500 mr-6 mt-20 pb-7 h-[550px] text-white`}
     >
       <div>
         <div>
@@ -60,7 +60,7 @@ const ProjectCart = ({ cart }) => {
               {cart.option2.map((item) => {
                 return (
                   <div key={item.label}>
-                    <p className=" bg-[#00FFFF] px-4 text-black hover:bg-[#80ffffc5] rounded-md border-b-2 border-b-orange-300">
+                    <p className=" bg-green-400 px-4 text-black hover:bg-white rounded-md border-b-2 border-b-orange-300">
                       {item.value}
                     </p>
                   </div>
@@ -69,13 +69,25 @@ const ProjectCart = ({ cart }) => {
             </div>
           </div>
         </div>
-        <div className=" absolute bottom-3 w-full">
+        <div className=" absolute bottom-3 ml-4 flex w-[90%] mx-auto justify-between">
           <Link>
             <button
-              onClick={() => handleClick(cart.link)}
-              className="bg-[#00FFFF] w-full font-bold text-black btn btn-sm hover:bg-white "
+              onClick={() => handleClick(cart?.link)}
+              className="bg-green-400 w-full font-bold text-black btn btn-sm hover:bg-white "
             >
               Live Link
+            </button>
+          </Link>
+          <Link
+          to={cart.codeLink}
+          target="_blank" 
+          >
+            
+            <button
+              // onClick={() => handleClick(cart?.codeLink)}
+              className="bg-green-400 w-full font-bold text-black btn btn-sm hover:bg-white "
+            >
+              Github link
             </button>
           </Link>
         </div>

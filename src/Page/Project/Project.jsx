@@ -8,7 +8,7 @@ import { useAnimation } from "framer-motion";
 
 const Project = () => {
   const Dynamic = project.filter((cart) => cart.option == "Dynamic");
-  const Static = project.filter((cart) => cart.option == "Static");
+  const Portfolio = project.filter((cart) => cart.option == "Portfolio");
   const ECommerce = project.filter((cart) => cart.option == "E-commerce");
   const Event = project.filter((cart) => cart.option == "Event");
 
@@ -22,7 +22,7 @@ const Project = () => {
             <Tab>All</Tab>
             <Tab>E-commerce</Tab>
             <Tab>Event-management</Tab>
-            <Tab>Static</Tab>
+            <Tab>Portfolio</Tab>
           </TabList>
 
           <TabPanel>
@@ -49,7 +49,7 @@ const Project = () => {
           </TabPanel>
           <TabPanel>
             <div className=" grid md:grid-cols-3 grid-cols-1 gap-10 ml-5">
-              {Static.map((cart) => (
+              {Portfolio.map((cart) => (
                 <ProjectCart cart={cart} key={cart._id} />
               ))}
             </div>

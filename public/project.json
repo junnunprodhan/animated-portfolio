@@ -1,15 +1,32 @@
-[
+[ {
+  "_id": "65092bf99dde676b518e2c0e",
+  "name": "Exclusive",
+  "link": "https://exclusive-commerce.vercel.app/",
+  "codeLink": "https://github.com/junnunprodhan/food-management",
+  "description": "Exclusive, multi vendor E-commerces, update, and delete system with MongoDB CRUD oper…",
+  "option": "E-commerce",
+  "option2": [
+    { "value": "Framer motion", "label": "Framer motion" },
+    { "value": "Tailwind Css", "label": "Tailwind Css" },
+    { "value": "Java Script", "label": "Java Script" },
+    { "value": "NEXT js", "label": "NEXT js" },
+    { "value": "Node js", "label": "Node js" },
+    { "value": "Express js", "label": "Express js" },
+    { "value": "MongoDb", "label": "MongoDb" }
+  ],
+  "img": "https://i.ibb.co/4ML2YrG/exclusive.png"
+},
   {
     "_id": "65086d4f10173981a03c9399",
-    "name": "Bistro-Boss",
-    "link": "https://bistrorestaurant-34425.web.app/",
-    "description": "Experience culinary delight at our restaurant, where every dish is a...",
+    "name": "Food Management",
+    "link": "https://food-management-7.vercel.app/",
+    "description": "food management website donate food and multifunctional web..",
     "option": "Event",
     "option2": [
       { "value": "Tailwind Css", "label": "Tailwind Css" },
-      { "value": "Java Script", "label": "Java Script" },
-      { "value": "HTML5", "label": "HTML5" },
-      { "value": "Bootstrap", "label": "Bootstrap" },
+      { "value": "Framer motion", "label": "Framer motion" },
+      { "value": "Type Script", "label": "Type Script" },
+      { "value": "MongoDB", "label": "MongoDB" },
       { "value": "React js", "label": "React js" },
       { "value": "Node js", "label": "Node js" },
       { "value": "Express js", "label": "Express js" }
@@ -17,65 +34,56 @@
     "img": "https://i.ibb.co/Lrk0bpF/share-food.png"
   },
   {
-    "_id": "65092bf99dde676b518e2c0e",
-    "name": "Summer-language-camp",
-    "link": "https://summer-language-camp.web.app/",
-    "description": "summer-language-camp, update, and delete system with MongoDB CRUD oper…",
-    "option": "E-commerce",
-    "option2": [
-      { "value": "HTML5", "label": "HTML5" },
-      { "value": "Tailwind Css", "label": "Tailwind Css" },
-      { "value": "Java Script", "label": "Java Script" },
-      { "value": "React js", "label": "React js" },
-      { "value": "Node js", "label": "Node js" },
-      { "value": "Express js", "label": "Express js" },
-      { "value": "MongoDb", "label": "MongoDb" }
-    ],
-    "img": "https://i.ibb.co/4ML2YrG/exclusive.png"
-  },
-  {
     "_id": "6509b2ed9c7cd21487b4195f",
-    "name": "Toy for boy",
-    "link": "https://toy-baby-55829.web.app/",
-    "description": "Toy for boy, post and get system MongoDB CRUD operations. Firebase Aut…",
+    "name": "Event 360",
+    "link": "https://event360-client-gamma.vercel.app/",
+    "codeLink": "https://github.com/junnunprodhan/food-management",
+    "description": "Event management website, post and get system MongoDB CRUD operations. custom Authentication...",
     "option": "Event",
     "option2": [
-      { "value": "HTML5", "label": "HTML5" },
       { "value": "Tailwind Css", "label": "Tailwind Css" },
-      { "value": "Java Script", "label": "Java Script" },
+      { "value": "Framer motion", "label": "Framer motion" },
+      { "value": "Type Script", "label": "Type Script" },
+      { "value": "MongoDB", "label": "MongoDB" },
       { "value": "React js", "label": "React js" },
       { "value": "Node js", "label": "Node js" },
-      { "value": "Express js", "label": "Express js" },
-      { "value": "MongoDb", "label": "MongoDb" }
+      { "value": "Express js", "label": "Express js" }
     ],
     "img": "https://i.ibb.co/h8sRsfh/event.png"
   },
   {
     "_id": "6509c0750a3b3c4165ce507e",
-    "name": "G3 Arkits",
-    "link": "https://whimsical-beijinho-61a684.netlify.app/",
-    "description": "it's a portfolio website",
+    "name": "Deshi Shop",
+    "link": "https://deshi-shop.netlify.app/",
+    "codeLink": "https://github.com/junnunprodhan/food-management",
+    "description": "Deshi shop, multi vendor E-commerces, update, and delete system with MongoDB CRUD oper…",
     "option": "E-commerce",
     "option2": [
-      { "value": "HTML5", "label": "HTML5" },
-      { "value": "CSS3", "label": "CSS3" }
+      { "value": "Tailwind Css", "label": "Tailwind Css" },
+      { "value": "Framer motion", "label": "Framer motion" },
+      { "value": "Type Script", "label": "Type Script" },
+      { "value": "MongoDB", "label": "MongoDB" },
+      { "value": "React js", "label": "React js" },
+      { "value": "Node js", "label": "Node js" },
+      { "value": "Express js", "label": "Express js" }
     ],
     "img": "https://i.ibb.co/T2B196h/deshi-shop.png"
   },
   {
     "_id": "652a621500431234249ecca9",
-    "name": "Mazz Restaurant",
-    "link": "https://mazza-restaurent.web.app/",
-    "description": "This is an online product order and online book table website, it's a re…",
+    "name": "Mediaid",
+    "link": "https://mediaid-seven.vercel.app/",
+    "codeLink": "https://github.com/junnunprodhan/food-management",
+    "description": "This is medicine sales application. Build with Next js 13 and mongoDB. Use Redux for state manage.…",
     "option": "E-commerce",
     "option2": [
-      { "value": "CSS3", "label": "CSS3" },
       { "value": "Tailwind Css", "label": "Tailwind Css" },
-      { "value": "Java Script", "label": "Java Script" },
+      { "value": "Framer motion", "label": "Framer motion" },
+      { "value": "Type Script", "label": "Type Script" },
+      { "value": "MongoDB", "label": "MongoDB" },
       { "value": "React js", "label": "React js" },
       { "value": "Node js", "label": "Node js" },
-      { "value": "Express js", "label": "Express js" },
-      { "value": "MongoDb", "label": "MongoDb" }
+      { "value": "Express js", "label": "Express js" }
     ],
     "img": "https://i.ibb.co/HV401Q6/media-aid.png"
   },
@@ -83,6 +91,7 @@
     "_id": "65086d4f10173981a03c9399",
     "name": "Bistro-Boss",
     "link": "https://bistrorestaurant-34425.web.app/",
+    "codeLink": "https://github.com/junnunprodhan/food-management",
     "description": "Experience culinary delight at our restaurant, where every dish is a...",
     "option": "E-commerce",
     "option2": [
@@ -99,7 +108,8 @@
   {
     "_id": "65086d4f10173981a03c9399",
     "name": "Bistro-Boss",
-    "link": "https://bistrorestaurant-34425.web.app/",
+    "link": "https://techzons.vercel.app/",
+    "codeLink": "https://github.com/junnunprodhan/food-management",
     "description": "Experience culinary delight at our restaurant, where every dish is a...",
     "option": "E-commerce",
     "option2": [
