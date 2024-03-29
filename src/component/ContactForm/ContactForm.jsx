@@ -63,7 +63,7 @@ const ContactForm = () => {
             id="email"
             name="email"
             placeholder="Enter your email"
-            className="input input-bordered text-black w-full border-[#00FFFF] rounded-sm "
+            className="input input-bordered w-full border-[#00FFFF] rounded-sm "
           />
         </div>
         <div className="form-control w-full ">

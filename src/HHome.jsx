@@ -10,9 +10,12 @@ const HHome = () => {
   return (
     <div className=' overflow-hidden'>
      <Home/>
-      <About />
+      
       <div className='md:mt-32 ml-6'>
         <Project />
+      </div>
+      <div className=' mx-auto'>
+        <About />
       </div>
       <div className=' mx-auto'>
         <Contact />
