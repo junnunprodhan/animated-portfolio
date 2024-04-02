@@ -11,6 +11,7 @@ const Project = () => {
   const Portfolio = project.filter((cart) => cart.option == "Portfolio");
   const ECommerce = project.filter((cart) => cart.option == "E-commerce");
   const Event = project.filter((cart) => cart.option == "Event");
+  const Tool = project.filter((cart) => cart.option == "Tool");
 
   
   return (
@@ -23,6 +24,7 @@ const Project = () => {
             <Tab>E-commerce</Tab>
             <Tab>Event-management</Tab>
             <Tab>Portfolio</Tab>
+            <Tab>Tool</Tab>
           </TabList>
 
           <TabPanel>
@@ -50,6 +52,13 @@ const Project = () => {
           <TabPanel>
             <div className=" grid md:grid-cols-3 grid-cols-1 gap-10 ml-5">
               {Portfolio.map((cart) => (
+                <ProjectCart cart={cart} key={cart._id} />
+              ))}
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className=" grid md:grid-cols-3 grid-cols-1 gap-10 ml-5">
+              {Tool.map((cart) => (
                 <ProjectCart cart={cart} key={cart._id} />
               ))}
             </div>
