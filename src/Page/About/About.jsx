@@ -6,7 +6,7 @@ import MyResume from "../../component/MyResume/MyResume";
 
 const About = () => {
   return (
-    <section className="">
+    <section className="my-20">
       <SectionTitle titleF={"About"} titleS={" Myself"} />
       <div>
         <div className="px-2">

@@ -12,6 +12,7 @@ const Project = () => {
   const ECommerce = project.filter((cart) => cart.option == "E-commerce");
   const Event = project.filter((cart) => cart.option == "Event");
   const Tool = project.filter((cart) => cart.option == "Tool");
+  const Recent = project.slice(0,6)
 
   
   return (
@@ -20,6 +21,7 @@ const Project = () => {
       <div className="">
         <Tabs>
           <TabList className={"flex justify-center items-center"}>
+            <Tab>Recent</Tab>
             <Tab>All</Tab>
             <Tab>E-commerce</Tab>
             <Tab>Event-management</Tab>
@@ -27,6 +29,13 @@ const Project = () => {
             <Tab>Tool</Tab>
           </TabList>
 
+          <TabPanel>
+            <div className=" grid md:grid-cols-3 grid-cols-1 gap-10 ml-5">
+              {Recent.map((cart) => (
+                <ProjectCart cart={cart} key={cart._id} />
+              ))}
+            </div>
+          </TabPanel>
           <TabPanel>
             <div className=" grid md:grid-cols-3 grid-cols-1 gap-10 ml-5">
               {project.map((cart) => (
