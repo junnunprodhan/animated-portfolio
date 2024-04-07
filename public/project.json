@@ -126,17 +126,15 @@
     "_id": "65086d4f10173981a03c93789",
     "name": "Speed Typer",
     "link": "https://frabjous-zuccutto-d325ca.netlify.app/",
-    "codeLink": "https://github.com/junnunprodhan/food-management",
+    "codeLink": "https://github.com/junnunprodhan/Speed-typer",
     "description": "A typing test tools,this tools is make good typer...",
     "option": "Tool",
     "option2": [
       { "value": "Tailwind Css", "label": "Tailwind Css" },
-      { "value": "Framer motion", "label": "Framer motion" },
-      { "value": "Type Script", "label": "Type Script" },
-      { "value": "MongoDB", "label": "MongoDB" },
-      { "value": "React js", "label": "React js" },
-      { "value": "Node js", "label": "Node js" },
-      { "value": "Express js", "label": "Express js" }
+      { "value": "HTML", "label": "HTML" },
+      { "value": "css", "label": "cssL" },
+      { "value": "Java Script", "label": "Java Script" }
+  
     ],
     "img": "https://i.ibb.co/Tt0dPjP/screencapture-frabjous-zuccutto-d325ca-netlify-app-2024-04-02-19-23-02.png"
   },
