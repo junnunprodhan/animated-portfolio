@@ -37,6 +37,7 @@
     "_id": "65086d4f10173981a03c93099",
     "name": "Food Management",
     "link": "https://food-management-7.vercel.app/",
+    "codeLink": "https://github.com/junnunprodhan/food-management",
     "description": "food management website donate food and multifunctional web..",
     "option": "Event",
     "option2": [
@@ -54,7 +55,7 @@
     "_id": "6509b2ed9c7cd21487b4195f",
     "name": "Event 360",
     "link": "https://event360-client-gamma.vercel.app/",
-    "codeLink": "https://github.com/junnunprodhan/food-management",
+    "codeLink": "https://github.com/junnunprodhan/event-360",
     "description": "Event management website, post and get system MongoDB CRUD operations. custom Authentication...",
     "option": "Event",
     "option2": [
@@ -72,7 +73,7 @@
     "_id": "652a621500431234249ecca9",
     "name": "Mediaid",
     "link": "https://mediaid-seven.vercel.app/",
-    "codeLink": "https://github.com/junnunprodhan/food-management",
+    "codeLink": "https://github.com/junnunprodhan/mediaid-e-commerce",
     "description": "This is medicine sales application. Build with Next js 13 and mongoDB. Use Redux for state manage.…",
     "option": "E-commerce",
     "option2": [
@@ -90,7 +91,7 @@
     "_id": "65086d4f10173981a03c93899",
     "name": "techzones",
     "link": "https://techzons.vercel.app/",
-    "codeLink": "https://github.com/junnunprodhan/food-management",
+    "codeLink": "https://github.com/junnunprodhan/techzonest",
     "description": "Experience culinary delight at our restaurant, where every dish is a...",
     "option": "E-commerce",
     "option2": [
@@ -108,7 +109,7 @@
     "_id": "65086d4f10173981a03c99399",
     "name": "Daraz App",
     "link": "https://daraz-five.vercel.app/",
-    "codeLink": "https://github.com/junnunprodhan/food-management",
+    "codeLink": "https://github.com/junnunprodhan/daraz-clone",
     "description": "Experience culinary delight at our restaurant, where every dish is a...",
     "option": "E-commerce",
     "option2": [
@@ -142,6 +143,22 @@
     "_id": "65086d4f10173981a03c93989",
     "name": "Password Generator",
     "link": "https://junnunprodhan.github.io/password-generator/",
+    "codeLink": "https://github.com/junnunprodhan/password-generator",
+    "description": "Secure Password generator tool fully responsive ...",
+    "option": "Tool",
+    "option2": [
+      { "value": "Tailwind Css", "label": "Tailwind Css" },
+      { "value": "HTML", "label": "HTML" },
+      { "value": "css", "label": "cssL" },
+      { "value": "Java Script", "label": "Java Script" }
+  
+    ],
+    "img": "https://i.ibb.co/FH8xFyV/screencapture-junnunprodhan-github-io-password-generator-2024-04-07-12-31-26.png"
+  },
+  {
+    "_id": "65086d4f10173981a03c93989",
+    "name": "Junnun portfolio",
+    "link": "https://jovial-cendol-44d28a.netlify.app/",
     "codeLink": "https://github.com/junnunprodhan/password-generator",
     "description": "Secure Password generator tool fully responsive ...",
     "option": "Tool",
