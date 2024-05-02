@@ -45,6 +45,10 @@ const Header = () => {
               <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-red-500 transition-all duration-300 group-hover:w-full"></span>
             </li>
             <li className="group flex  cursor-pointer flex-col">
+              <Link to={'/blogs'}>Blog</Link>
+              <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+            </li>
+            <li className="group flex  cursor-pointer flex-col">
               <Link to={'/contact'}>Contact</Link>
               <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-red-500 transition-all duration-300 group-hover:w-full"></span>
             </li>
