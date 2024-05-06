@@ -42,10 +42,10 @@ const ContactForm = () => {
         backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%2380877f' fill-opacity='0.11'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E")`,
       }}
     >
-      <div className="shadow-2xl dark:bg-gray-800 dark:border-gray-700 mt-[50px] md:px-10 px-2 py-6 border rounded-lg space-y-[19px] text-black md:text-white">
+      <div className="shadow-2xl dark:bg-gray-800 dark:text-white dark:border-gray-700 mt-[50px] md:px-10 px-2 py-6 border rounded-lg space-y-[19px] text-black md:text-white">
         <div className="form-control w-full">
           <label className="label">
-            <span className="label-text font-bold text-white">Name</span>
+            <span className="label-text font-bold text-black">Name</span>
           </label>
           <input
             required
@@ -58,7 +58,7 @@ const ContactForm = () => {
         </div>
         <div className="form-control w-full ">
           <label className="label">
-            <span className="label-text font-bold text-white">Email</span>
+            <span className="label-text font-bold text-black">Email</span>
           </label>
           <input
             required
@@ -71,7 +71,7 @@ const ContactForm = () => {
         </div>
         <div className="form-control w-full ">
           <label className="label">
-            <span className="label-text font-bold text-white">Subject</span>
+            <span className="label-text font-bold text-black">Subject</span>
           </label>
           <input
             required
@@ -84,7 +84,7 @@ const ContactForm = () => {
         </div>
         <div className="form-control w-full ">
           <label className="label">
-            <span className="label-text font-bold text-white">Subject</span>
+            <span className="label-text font-bold text-black">Subject</span>
           </label>
           <textarea
             required

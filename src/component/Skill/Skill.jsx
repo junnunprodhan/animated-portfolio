@@ -73,7 +73,7 @@ const Skill = () => {
             >
               <span className=" font-[Poppins]">Skill And</span> Technologies
             </p>
-            <progress className="progress w-20 h-1 bg-[#00FFFF] mb-10"></progress>
+            <progress className="progress w-20 h-1 bg-green-500 mb-10"></progress>
             <motion.div className=" grid md:grid-cols-5 gap-5 mx-auto grid-cols-2 text-center">
               {skill.map((item) => (
                 <Experince item={item} key={item.num} />
