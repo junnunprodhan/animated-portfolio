@@ -88,24 +88,6 @@
     "img": "https://i.ibb.co/HV401Q6/media-aid.png"
   },
   {
-    "_id": "65086d4f10173981a03c93899",
-    "name": "techzones",
-    "link": "https://techzons.vercel.app/",
-    "codeLink": "https://github.com/junnunprodhan/techzonest",
-    "description": "Experience culinary delight at our restaurant, where every dish is a...",
-    "option": "E-commerce",
-    "option2": [
-      { "value": "Tailwind Css", "label": "Tailwind Css" },
-      { "value": "Framer motion", "label": "Framer motion" },
-      { "value": "Type Script", "label": "Type Script" },
-      { "value": "MongoDB", "label": "MongoDB" },
-      { "value": "React js", "label": "React js" },
-      { "value": "Node js", "label": "Node js" },
-      { "value": "Express js", "label": "Express js" }
-    ],
-    "img": "https://i.ibb.co/M1JLygF/screencapture-techzons-vercel-app-2024-03-29-11-30-58.png"
-  },
-  {
     "_id": "65086d4f10173981a03c99399",
     "name": "Daraz App",
     "link": "https://daraz-five.vercel.app/",
@@ -143,22 +125,6 @@
     "_id": "65086d4f10173981a03c93989",
     "name": "Password Generator",
     "link": "https://junnunprodhan.github.io/password-generator/",
-    "codeLink": "https://github.com/junnunprodhan/password-generator",
-    "description": "Secure Password generator tool fully responsive ...",
-    "option": "Tool",
-    "option2": [
-      { "value": "Tailwind Css", "label": "Tailwind Css" },
-      { "value": "HTML", "label": "HTML" },
-      { "value": "css", "label": "cssL" },
-      { "value": "Java Script", "label": "Java Script" }
-  
-    ],
-    "img": "https://i.ibb.co/FH8xFyV/screencapture-junnunprodhan-github-io-password-generator-2024-04-07-12-31-26.png"
-  },
-  {
-    "_id": "65086d4f10173981a03c93989",
-    "name": "Junnun portfolio",
-    "link": "https://jovial-cendol-44d28a.netlify.app/",
     "codeLink": "https://github.com/junnunprodhan/password-generator",
     "description": "Secure Password generator tool fully responsive ...",
     "option": "Tool",

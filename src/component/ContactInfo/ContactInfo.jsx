@@ -47,7 +47,7 @@ const ContactInfo = () => {
       <div className=" space-y-5 shadow-2xl mx-2  ">
         <div className="border rounded-lg shadow-2xl bg-gray-800 text-start flex md:gap-5 gap-3 md:pl-5 pl-3 py-8 text-white">
           <div>
-            <p className=" text-[#00FFFF] bg-[#bef6f6] md:w-16 md:h-16 w-10 h-10 flex items-center justify-center rounded-full">
+            <p className=" text-green-500 bg-white md:w-16 md:h-16 w-10 h-10 flex items-center justify-center rounded-full">
               <BiPhoneCall size={20} />
             </p>
           </div>
@@ -55,14 +55,14 @@ const ContactInfo = () => {
             <p className=" font-bold font-[Radio Canada,sans-serif] text-xl mb-3 ">
               Contact on phone
             </p>
-            <p className=" hover:text-[#00FFFF]">+8801884248898</p>
-            <p className=" hover:text-[#00FFFF]">+8801648319117</p>
+            <p className=" hover:text-green-500">+8801884248898</p>
+            <p className=" hover:text-green-500">+8801648319117</p>
           </div>
         </div>
 
         <div className="border rounded-lg shadow text-white bg-gray-800 text-start flex md:gap-5 gap-3 md:pl-5 pl-3 py-8">
           <div>
-            <p className=" text-[#00FFFF] bg-[#bef6f6] md:w-16 md:h-16 w-10 h-10 flex items-center justify-center rounded-full">
+            <p className="  text-green-500 bg-white md:w-16 md:h-16 w-10 h-10 flex items-center justify-center rounded-full">
               <AiOutlineMail size={20} />
             </p>
           </div>
@@ -70,10 +70,10 @@ const ContactInfo = () => {
             <p className=" font-bold font-[Radio Canada,sans-serif] text-xl mb-3 ">
               Contact on mail
             </p>
-            <p className=" hover:text-[#00FFFF] ">
+            <p className=" hover:text-green-500 ">
               junnunprodhan@gmail.com
             </p>
-            <p className=" hover:text-[#00FFFF]">
+            <p className=" hover:text-green-500">
             junnunprodhan89@gmail.com
             </p>
           </div>
@@ -81,7 +81,7 @@ const ContactInfo = () => {
 
         <div className="border rounded-lg text-white shadow bg-gray-800 text-start flex md:gap-5 gap-3 pl-3 md:pl-5 py-8">
           <div>
-            <p className=" text-[#00FFFF] bg-[#bef6f6] md:w-16 md:h-16 w-10 h-10 flex items-center justify-center rounded-full">
+            <p className="  text-green-500 bg-white md:w-16 md:h-16 w-10 h-10 flex items-center justify-center rounded-full">
               <FaAddressCard size={30} />
             </p>
           </div>
@@ -89,7 +89,7 @@ const ContactInfo = () => {
             <p className=" font-bold font-[Radio Canada,sans-serif] text-xl mb-3 ">
               Contact address
             </p>
-            <p className=" hover:text-[#00FFFF]">Matlab,Chandpur</p>
+            <p className=" hover:text-green-500">Matlab,Chandpur</p>
           </div>
         </div>
       </div>

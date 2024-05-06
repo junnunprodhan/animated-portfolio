@@ -34,12 +34,12 @@ const AboutAuthor = () => {
     >
       <div className="space-y-5 md:w-11/12 mx-auto">
         <p className=" text-xl md:text-3xl font-['Poppins'] text-center">
-          I am a Full Stack Web Developer
+          I am a MERN-Stack Web Developer
         </p>
         <hr className=" border-[1px] mt-3" />
         <p className="font-['Poppins'] text-start">
           I am Junnun Prodhan form Bangladesh. I am Learning Programming every
-          single day. I have some projects with Full Stack. I am a hard working
+          single day. I have some projects with MERN-Stack. I am a hard working
           person. I always learn new technologies everyday.
         </p>
         <div className=" flex flex-col gap-3">

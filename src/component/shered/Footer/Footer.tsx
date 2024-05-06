@@ -31,7 +31,7 @@ const Footers = () => {
           </h1>
           <div className="mx-auto rounded-lg font-black mt-5 text-zinc-400 md:mt-12 md:max-w-lg text-center lg:text-lg">
             <p className="font-medium">
-              A Full-Stack Web Developer building the Full-stack of Websites
+              A Mern-Stack Web Developer building the Full-stack of Websites
               and Web Applications that leads to the success of the overall
               product
             </p>

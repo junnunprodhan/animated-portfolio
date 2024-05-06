@@ -111,7 +111,7 @@ const Home = () => {
             </button> */}
             
             <button className="text-xl box-border border-2 border-red-700 w-52 h-10 hover:bg-red-400 bg-red-600 text-white relative group">
-  <a href="https://drive.google.com/file/d/1kJ-ST4AjV8UdHPJcD6Mc9WNWqXoeO694/view?usp=drive_link" download>
+  <a href="https://drive.google.com/file/d/10gEWgUfJ0bNY-aCN3q9tLLjhprcNj54E/view?usp=sharing" download>
     <span className="pr-8">Download Resume</span>
   </a>
   {/* <span className="bg-red-400 absolute right-0 top-0  h-full flex items-center justify-center px-1 group-hover:duration-300 group-hover:w-full w-8 duration-300">

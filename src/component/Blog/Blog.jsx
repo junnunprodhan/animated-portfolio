@@ -11,7 +11,7 @@ const Blog = ({item}) => {
   </div>
   <div className="bg-gray-200 px-6 py-4">
     <Link to={item?.link}  target="_blank">
-    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">Read More</button></Link>
+    <button className="bg-blue-500 hover:bg-blue-700 text-white bottom-0 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">Read More</button></Link>
   </div>
 </div>
     );

@@ -7,7 +7,7 @@ const SectionTitle = ({ titleF, titleS, subTitle }) => {
                 <p className='  '>{titleF}</p>
                 <p className=''>{titleS}</p>
             </div>
-            <progress className="progress w-20 h-1 bg-[#00FFFF]"></progress>
+            <progress className="progress w-20 h-1 bg-green-500"></progress>
         </div>
     );
 };

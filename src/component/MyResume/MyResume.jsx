@@ -33,7 +33,7 @@ const MyResume = () => {
       <div data-aos="fade-right" className=" md:w-6/12">
         <div className="grid flex-grow card rounded-box 2">
           <div className="flex gap-4 items-center">
-            <p className=" text-[#00FFFF] mb-4">
+            <p className=" text-green-500 mb-4">
               <BiSolidBook className="" size={20} />
             </p>
             <p className=" md:text-3xl text-md font-bold mb-4">
@@ -41,10 +41,10 @@ const MyResume = () => {
             </p>
           </div>
           <p className="flex gap-2 mb-1 font-bold">
-            <BsCalendarDate className=" text-[#00FFFF] mt-1" />
+            <BsCalendarDate className=" text-green-500 mt-1" />
             2019-2022
           </p>
-          <p className=" md:text-xl text-[#00FFFF] font-bold">
+          <p className=" md:text-xl text-green-500 font-bold">
             Bsc degree
           </p>
           <p className=" font-mono  mt-1">
@@ -53,10 +53,10 @@ const MyResume = () => {
         </div>
         <div className="grid flex-grow card rounded-box ">
           <p className="flex gap-2 mb-1 font-bold">
-            <BsCalendarDate className=" text-[#00FFFF] mt-1" />
+            <BsCalendarDate className=" text-green-500 mt-1" />
             2017-2019
           </p>
-          <p className=" md:text-xl text-[#00FFFF] font-bold">
+          <p className=" md:text-xl text-green-500 font-bold">
             Higher Secondary School Certificate
           </p>
           <p className=" font-mono mt-1 ">
@@ -66,13 +66,13 @@ const MyResume = () => {
       </div>
 
       <div className="divider lg:divider-horizontal md:mt-20">
-        <p className=" bg-[#00FFFF] w-7 h-7 rounded-full"></p>
+        <p className=" bg-green-500 w-7 h-7 rounded-full"></p>
       </div>
 
       <div data-aos="fade-left" className="md:w-6/12">
         <div className="grid flex-grow card rounded-box ">
           <div className="flex gap-4 items-center">
-            <p className=" text-[#00FFFF] pb-2">
+            <p className=" text-green-500 pb-2">
               <MdWorkHistory className="" size={20} />
             </p>
             <p className=" md:text-3xl text-md font-bold mb-2 md:mb-4">
@@ -80,10 +80,10 @@ const MyResume = () => {
             </p>
           </div>
           <p className="flex gap-2 mb-1 font-bold">
-            <BsCalendarDate className=" text-[#00FFFF] mt-1" />
+            <BsCalendarDate className=" text-green-500 mt-1" />
             2022
           </p>
-          <p className=" md:text-xl text-[#00FFFF] font-bold">
+          <p className=" md:text-xl text-green-500 font-bold">
             Front-end Developer
           </p>
           <p className=" font-mono">
@@ -93,14 +93,14 @@ const MyResume = () => {
         </div>
         <div className="grid flex-grow card rounded-box ">
           <p className="flex gap-2 mb-1 font-bold">
-            <BsCalendarDate className=" text-[#00FFFF] mt-1" />
+            <BsCalendarDate className=" text-green-500 mt-1" />
             2023
           </p>
-          <p className=" md:text-xl text-[#00FFFF] font-bold">
+          <p className=" md:text-xl text-green-500 font-bold">
             Full-stack Developer
           </p>
           <p className=" font-mono">
-            I have competed Full-Stack developing from programming hero courses Level 2{" "}
+            I have competed Mern-Stack developing from programming hero courses Level 2{" "}
           </p>
         </div>
       </div>

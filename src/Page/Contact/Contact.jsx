@@ -1,6 +1,8 @@
 import SectionTitle from "../../component/shered/SectionTitle/SectionTitle";
 import ContactInfo from "../../component/ContactInfo/ContactInfo";
 import ContactForm from "../../component/ContactForm/ContactForm";
+// import ContactFormNew from "../../component/ContactForm/ContactFormNew";
+
 
 const Contact = () => {
 
@@ -15,6 +17,7 @@ const Contact = () => {
         </div>
         <div className=" md:w-6/12 px-2">
           <ContactForm />
+          
         </div>
       </div>
     </section>

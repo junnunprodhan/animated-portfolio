@@ -20,9 +20,6 @@ const HHome = () => {
       <div className=' mx-auto'>
         <Contact />
       </div>
-      <div className=' mt-6'>
-        <Footer/>
-      </div>
     </div>
   );
 };

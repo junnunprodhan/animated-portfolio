@@ -38,6 +38,9 @@ const ContactForm = () => {
       animate={controls}
       initial="hidden"
       onSubmit={handleSubmit}
+      style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%2380877f' fill-opacity='0.11'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E")`,
+      }}
     >
       <div className="shadow-2xl dark:bg-gray-800 dark:border-gray-700 mt-[50px] md:px-10 px-2 py-6 border rounded-lg space-y-[19px] text-black md:text-white">
         <div className="form-control w-full">
@@ -50,7 +53,7 @@ const ContactForm = () => {
             id="name"
             name="name"
             placeholder="Enter your name"
-            className="input input-bordered w-full border-[#00FFFF] rounded-sm "
+            className="input input-bordered w-full text-black dark:text-white  border-[#00FFFF] rounded-sm "
           />
         </div>
         <div className="form-control w-full ">
@@ -63,7 +66,7 @@ const ContactForm = () => {
             id="email"
             name="email"
             placeholder="Enter your email"
-            className="input input-bordered w-full border-[#00FFFF] rounded-sm "
+            className="input input-bordered w-full text-black dark:text-white  border-[#00FFFF] rounded-sm "
           />
         </div>
         <div className="form-control w-full ">
@@ -76,27 +79,27 @@ const ContactForm = () => {
             id="subject"
             name="subject"
             placeholder="Enter subject"
-            className="input input-bordered w-full border-[#00FFFF] rounded-sm "
+            className="input input-bordered w-full text-black dark:text-white  border-[#00FFFF] rounded-sm "
           />
         </div>
         <div className="form-control w-full ">
           <label className="label">
             <span className="label-text font-bold text-white">Subject</span>
           </label>
-          <input
+          <textarea
             required
             type="text"
             id="message"
             name="message"
             placeholder="Enter message"
-            className="input input-bordered w-full h-36 border-[#00FFFF] rounded-sm "
+            className="input input-bordered w-full text-black dark:text-white h-36 border-[#00FFFF] rounded-sm "
           />
         </div>
         <div className=" text-start">
           <button
             type="submit"
             disabled={state.submitting}
-            className=" bg-[#00FFFF] text-black  uppercase px-8 py-2 rounded-sm hover:bg-white font-[ Radio Canada,sans-serif]"
+            className=" bg-green-500 text-black  uppercase px-8 py-2 rounded-sm hover:bg-white font-[ Radio Canada,sans-serif]"
           >
             SEND
           </button>

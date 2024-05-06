@@ -60,5 +60,10 @@
     "num": 110,
     "img": "https://i.ibb.co/jJHNP2D/nextjs.png",
     "name": "Next js"
+  },
+  {
+    "num": 111,
+    "img": "https://i.ibb.co/f23Yby9/redux.jpg",
+    "name": "Redux"
   }
 ]

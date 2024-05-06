@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom';
 import { CiDark } from 'react-icons/ci';
 import { useTheme } from '../component/ThemContex/ThemContext';
 import { MdLightMode } from 'react-icons/md';
+import Footers from '../component/shered/Footer/Footer';
 
 const Main = () => {
     const { currentTheme, toggleTheme } = useTheme()
@@ -18,7 +19,12 @@ const Main = () => {
                 }
             </div>
             <div><Header /></div>
-            <div className='md:pt-20'><Outlet /></div>
+            <div
+             className='md:pt-20'><Outlet />
+             </div>
+            <div
+             className='md:pt-20'><Footers></Footers>
+             </div>
 
         </div>
     );
