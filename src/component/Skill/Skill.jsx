@@ -3,12 +3,14 @@ import RadialProgress from "../shered/RadialProgress/RadialProgress";
 import SectionTitle from "../shered/SectionTitle/SectionTitle";
 import Experince from "../Experience/Experince";
 import { motion, useAnimation, useInView } from "framer-motion";
-import skill from "../../../public/skill.json";
+import useGetSkills from "../../utils/useGetSkills";
 
 const Skill = () => {
   const ref = useRef(null);
   const inView = useInView(ref);
   const controls = useAnimation();
+  const { data, isPending } = useGetSkills();
+  const skill= data?.data?.data
 
   useEffect(() => {
     if (inView) {
@@ -45,22 +47,22 @@ const Skill = () => {
           </div>
           <div>
             <RadialProgress
+              progress={85}
+              persent={85}
+              name={"Back-end Development"}
+            />
+          </div>
+          <div>
+            <RadialProgress
               progress={80}
               persent={80}
-              name={"Back-end Development"}
+              name={"Mern-Stack Development"}
             />
           </div>
           <div>
             <RadialProgress
               progress={75}
               persent={75}
-              name={"Mern-Stack Development"}
-            />
-          </div>
-          <div>
-            <RadialProgress
-              progress={70}
-              persent={70}
               name={"Full-Stack Development"}
             />
           </div>
@@ -75,7 +77,7 @@ const Skill = () => {
             </p>
             <progress className="progress w-20 h-1 bg-green-500 mb-10"></progress>
             <motion.div className=" grid md:grid-cols-5 gap-5 mx-auto grid-cols-2 text-center">
-              {skill.map((item) => (
+              {skill?.map((item) => (
                 <Experince item={item} key={item.num} />
               ))}
             </motion.div>

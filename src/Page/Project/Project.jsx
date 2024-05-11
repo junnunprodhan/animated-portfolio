@@ -3,10 +3,29 @@ import ProjectCart from "../../component/ProjectCart/ProjectCart";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import SectionTitle from "../../component/shered/SectionTitle/SectionTitle";
-import project from "../../../public/project.json";
+// import project from "../../../public/project.json";
 import { useAnimation } from "framer-motion";
+import useGetProjects from "../../utils/usegetProjects";
 
 const Project = () => {
+  const { data, isPending } = useGetProjects()
+  console.log('new data :',data?.data?.data?.length)
+
+  if (isPending) {
+    return (
+      <p className="flex items-center justify-center text-xl font-semibold h-screen dark:text-white">
+        Loading...
+      </p>
+    );
+  }
+  if (!data?.data?.data?.length) {
+    return (
+      <p className="flex items-center justify-center text-xl font-semibold h-screen dark:text-white">
+        Loading...
+      </p>
+    );
+  }
+const project = data?.data?.data;
   const Dynamic = project.filter((cart) => cart.option == "Dynamic");
   const Portfolio = project.filter((cart) => cart.option == "Portfolio");
   const ECommerce = project.filter((cart) => cart.option == "E-commerce");
@@ -24,7 +43,7 @@ const Project = () => {
             <Tab>Recent</Tab>
             <Tab>All</Tab>
             <Tab>E-commerce</Tab>
-            <Tab>Event-management</Tab>
+            <Tab>management</Tab>
             <Tab>Portfolio</Tab>
             <Tab>Tool</Tab>
           </TabList>

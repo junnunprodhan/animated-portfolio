@@ -10,6 +10,14 @@ import AddCard from '../Page/AddCard/AddCard';
 import Contact from '../Page/Contact/Contact';
 import HHome from '../HHome';
 import Blogs from '../Page/Blogs/Blogs';
+import DashboardLayout from '../Layouts/DashboardLayout';
+import Dashboard from '../dashboard/Dashboard';
+import AllProjectsDash from '../dashboard/AllProjectsDash';
+import CreateProject from '../dashboard/CreateProject';
+import CreateBlog from '../dashboard/CreateBlog';
+import AllBlogsDash from '../dashboard/AllBlogsDash';
+import AllSkillsDash from '../dashboard/AllSkillsDash';
+import CreateSkill from '../dashboard/CreateSkill';
 
 export const Routes = createBrowserRouter([
     {
@@ -41,5 +49,41 @@ export const Routes = createBrowserRouter([
                 element: <AddCard/>
             }
         ]
-    }
+    },
+    {
+        path: "/dashboard",
+        element: (
+            <DashboardLayout />
+        ),
+        children: [
+          {
+            path: "/dashboard",
+            element:<AllProjectsDash />,
+          },
+          {
+            path: "projects",
+            element: <AllProjectsDash />,
+          },
+          {
+            path: "create-project",
+            element: <CreateProject />,
+          },
+          {
+            path: "blogs",
+            element: <AllBlogsDash/>,
+          },
+          {
+            path: "create-blog",
+            element: <CreateBlog />,
+          },
+          {
+            path: "skills",
+            element: <AllSkillsDash/>,
+          },
+          {
+            path: "create-skill",
+            element: <CreateSkill />,
+          },
+        ],
+      },
 ])
