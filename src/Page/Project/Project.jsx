@@ -39,7 +39,7 @@ const project = data?.data?.data;
       <SectionTitle titleF={"My"} titleS={"Project"} />
       <div className="">
         <Tabs>
-          <TabList className={"flex justify-center items-center"}>
+          <TabList className={"flex justify-center items-center sm:flex-wrap"}>
             <Tab>Recent</Tab>
             <Tab>All</Tab>
             <Tab>E-commerce</Tab>
