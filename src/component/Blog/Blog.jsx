@@ -10,7 +10,7 @@ const Blog = ({item}) => {
     <div className="font-bold text-xl mb-2">{item?.title}</div>
   </div>
   <div className="bg-gray-200 px-6 py-4">
-    <Link to={item?.description}  target="_blank">
+  <Link to={`/blogs/${item?._id}`}>
     <button className="bg-blue-500 hover:bg-blue-700 text-white bottom-0 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">Read More</button></Link>
   </div>
 </div>

@@ -18,6 +18,7 @@ import CreateBlog from '../dashboard/CreateBlog';
 import AllBlogsDash from '../dashboard/AllBlogsDash';
 import AllSkillsDash from '../dashboard/AllSkillsDash';
 import CreateSkill from '../dashboard/CreateSkill';
+import BlogDetails from '../component/Blog/BlogDetails';
 
 export const Routes = createBrowserRouter([
     {
@@ -40,6 +41,11 @@ export const Routes = createBrowserRouter([
                 path:'/blogs',
                 element: <Blogs/>
             },
+            {
+              path: '/blogs/:id',
+              element: <BlogDetails/>,
+              loader: ({params}) => fetch(`https://portfolio-server-phi-flame.vercel.app/api/v1/blogs/${params.id}`)
+          },
             {
                path: '/contact',
                element: <Contact/>
