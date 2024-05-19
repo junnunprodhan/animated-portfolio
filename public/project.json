@@ -18,8 +18,8 @@
 },{
   "_id": "6509c0750a3b3c4165ce5097e",
   "name": "Deshi Shop",
-  "link": "https://deshi-shop-app.onrender.com/",
-  "codeLink": "https://github.com/junnunprodhan/deshi-shop",
+  "link": "https://deshi-shop-client-final.onrender.com/",
+  "codeLink": "https://github.com/junnunprodhan/deshi-shop-client-final",
   "description": "Deshi shop, multi vendor E-commerces, update, and delete system with MongoDB CRUD oper…",
   "option": "E-commerce",
   "option2": [

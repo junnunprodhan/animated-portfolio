@@ -3,7 +3,7 @@ import ProjectCart from "../../component/ProjectCart/ProjectCart";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import SectionTitle from "../../component/shered/SectionTitle/SectionTitle";
-// import project from "../../../public/project.json";
+import projects from "../../../public/project.json";
 import { useAnimation } from "framer-motion";
 import useGetProjects from "../../utils/usegetProjects";
 
@@ -31,7 +31,7 @@ const project = data?.data?.data;
   const ECommerce = project.filter((cart) => cart.option == "E-commerce");
   const Event = project.filter((cart) => cart.option == "Event");
   const Tool = project.filter((cart) => cart.option == "Tool");
-  const Recent = project.slice(0,6)
+  const Recent = projects.slice(0,6)
 
   
   return (

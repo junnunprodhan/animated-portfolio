@@ -3,7 +3,6 @@ import {
     createBrowserRouter,
 } from "react-router-dom";
 import Main from '../Layouts/Main';
-
 import About from '../Page/About/About';
 import Project from '../Page/Project/Project';
 import AddCard from '../Page/AddCard/AddCard';
@@ -11,7 +10,6 @@ import Contact from '../Page/Contact/Contact';
 import HHome from '../HHome';
 import Blogs from '../Page/Blogs/Blogs';
 import DashboardLayout from '../Layouts/DashboardLayout';
-import Dashboard from '../dashboard/Dashboard';
 import AllProjectsDash from '../dashboard/AllProjectsDash';
 import CreateProject from '../dashboard/CreateProject';
 import CreateBlog from '../dashboard/CreateBlog';
@@ -19,6 +17,9 @@ import AllBlogsDash from '../dashboard/AllBlogsDash';
 import AllSkillsDash from '../dashboard/AllSkillsDash';
 import CreateSkill from '../dashboard/CreateSkill';
 import BlogDetails from '../component/Blog/BlogDetails';
+import Login from '../Page/Login/Login';
+import Register from '../Page/Register/Register';
+import PrivateRoute from '../Layouts/PrivateRoute';
 
 export const Routes = createBrowserRouter([
     {
@@ -53,13 +54,23 @@ export const Routes = createBrowserRouter([
             {
                 path: '/myprojectadd/cart',
                 element: <AddCard/>
-            }
+            },
+            {
+              path: "/login",
+              element: <Login/>,
+            },
+            {
+              path: "/register",
+              element: <Register />,
+            },
         ]
     },
     {
         path: "/dashboard",
         element: (
+          <PrivateRoute>
             <DashboardLayout />
+            </PrivateRoute>
         ),
         children: [
           {
