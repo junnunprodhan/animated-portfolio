@@ -10,7 +10,9 @@ import Input from "../../component/Form/Input";
 import { baseApiAxios } from "../../api/baseApiAxios";
 import { setUser } from "../../redux/features/auth/authSlice";
 import { useDispatch } from "react-redux";
-
+import { motion } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserShield } from '@fortawesome/free-solid-svg-icons';
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
@@ -30,7 +32,7 @@ const Login = () => {
       const response = await mutateAsync(data);
       if (response?.data?.success) {
         localStorage.setItem("token", response?.data?.token);
-        navigate("/");
+        navigate("/dashboard");
         toast.success("Log in successfully", { position: "top-center" });
         dispatch(setUser(data));
       }
@@ -41,12 +43,21 @@ const Login = () => {
 
   return (
     <div className="flex justify-center items-center h-screen bg-[#F5F6F9] dark:bg-black dark:text-black  ">
-      <div className=" border px-10 py-20  w-[90%] md:w-1/3 mx-auto rounded-lg shadow-lg shadow-blue-gray-50 bg-[#FFFFFF] dark:bg-black ">
-        <div className="pb-5">
-          <h1 className="text-lg">Log In</h1>
-          <p className="text-gray-400 pt-3">
-            Please sign in with your registered email and password
-          </p>
+      <motion.div className=" p-8 rounded-lg shadow-lg max-w-md w-full bg-[#FFFFFF] dark:bg-black "
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="pb-5 flex mx-auto">
+        <FontAwesomeIcon icon={faUserShield} className="text-3xl text-center text-indigo-600 mr-2" />
+          <motion.h1
+            className="text-2xl text-center"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            Admin Login
+          </motion.h1>
         </div>
         <MainForm onSubmit={onSubmit}>
           <div className="space-y-3">
@@ -81,23 +92,25 @@ const Login = () => {
               </div>
             </div>
           </div>
-          <button
+          <motion.button
             type="submit"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             className="bg-blue-700 hover:bg-blue-800 duration-500 px-5 py-2 text-white font-semibold rounded-md mt-5 w-full flex items-center justify-center gap-5"
           >
             {isPending && (
               <AiOutlineLoading3Quarters className="animate-spin" />
             )}
             Log In
-          </button>
+          </motion.button>
         </MainForm>
-        <p className="dark:text-white mt-2">
+        {/* <p className="dark:text-white mt-2">
           Dont Have an Account?{" "}
           <Link to={"/register"}>
             <span className="text-blue-800">Please Register</span>
           </Link>
-        </p>
-      </div>
+        </p> */}
+      </motion.div>
     </div>
   );
 };
