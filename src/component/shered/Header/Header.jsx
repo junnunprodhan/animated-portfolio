@@ -4,6 +4,8 @@ import { AiFillHome, AiOutlineUser } from "react-icons/ai";
 import { PiShoppingBagOpenBold, PiStudent } from "react-icons/pi";
 import { MdOutlineContactPhone } from "react-icons/md";
 import { useTheme } from "../../ThemContex/ThemContext";
+import { motion } from "framer-motion";
+
 const Header = () => {
   const [dropDownState, setDropDownState] = useState(false);
   const dropDownMenuRef = useRef();
@@ -26,32 +28,51 @@ const Header = () => {
   return (
     <>
       <div className=" fixed hidden md:block z-40">
-        <nav className="flex items-center justify-between  bg-[#393E46] w-[1260px] py-2 text-white mb-24 pr-28 fixed font-[Poppins] font-bold">
-          <div className="scale-100 cursor-pointer flex rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
+        <motion.nav 
+          className="flex items-center justify-between bg-black/80 backdrop-blur-md w-[1260px] py-3 text-white mb-24 pr-28 fixed font-[Poppins] font-bold border-b border-purple-500/20"
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+        >
+          <motion.div 
+            className="scale-100 cursor-pointer flex rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200 hover:scale-110"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
             <img className="rounded-full" src={img} width="40" height="40" />
-            <h2 className=" flex items-center gap-1"> Junnun <p className=" text-red-400"> Prodhan</p></h2>
-          </div>
+            <h2 className="flex items-center gap-1">
+              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Junnun</span>
+              <span className="bg-gradient-to-r from-pink-400 to-red-400 bg-clip-text text-transparent">Prodhan</span>
+            </h2>
+          </motion.div>
           <ul className="hidden items-center justify-between gap-10 md:flex">
-            <li className="group flex  cursor-pointer flex-col">
-              <Link to={"/"}>Home</Link>
-              <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-            </li>
-            <li className="group flex  cursor-pointer flex-col">
-              <Link to={"/about"}>About</Link>
-              <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-            </li>
-            <li className="group flex  cursor-pointer flex-col">
-              <Link to={'/project'}>Project</Link>
-              <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-            </li>
-            <li className="group flex  cursor-pointer flex-col">
-              <Link to={'/blogs'}>Blog</Link>
-              <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-            </li>
-            <li className="group flex  cursor-pointer flex-col">
-              <Link to={'/contact'}>Contact</Link>
-              <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-            </li>
+            {[
+              { to: "/", label: "Home" },
+              { to: "/about", label: "About" },
+              { to: "/project", label: "Project" },
+              { to: "/blogs", label: "Blog" },
+              { to: "/contact", label: "Contact" }
+            ].map((item, index) => (
+              <motion.li 
+                key={item.to}
+                className="group flex cursor-pointer flex-col relative"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 * index, duration: 0.5 }}
+                whileHover={{ y: -2 }}
+              >
+                <Link 
+                  to={item.to}
+                  className="relative px-3 py-2 rounded-lg transition-all duration-300 hover:bg-white/10 hover:text-purple-300"
+                >
+                  {item.label}
+                </Link>
+                <motion.span 
+                  className="mt-[2px] h-[3px] w-[0px] rounded-full bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-300 group-hover:w-full"
+                  layoutId="underline"
+                />
+              </motion.li>
+            ))}
           </ul>
           {/* <div
             ref={dropDownMenuRef}
@@ -92,39 +113,44 @@ const Header = () => {
               </ul>
             )}
           </div> */}
-        </nav>
+        </motion.nav>
       </div>
       {/* <div className="flex justify-center"> */}
 
-      <div className=" fixed bottom-0 z-40 w-full">
-        <div className="  w-full md:hidden shadow-2xl mx-auto">
-          <div className="flex space-x-8 justify-center items-center w-full">
-            <Link to={"/"}>
-              <div className="px-2 bg-slate-800 py-2 cursor-pointer hover:bg-orange-500 text-white rounded-lg">
-                <AiFillHome size={30} />
-              </div>
-            </Link>
-
-            <Link to={"/about"}>
-              <div className="px-2 bg-slate-800 py-2 cursor-pointer hover:bg-orange-500 text-white rounded-lg">
-                <AiOutlineUser size={30} />
-              </div>
-            </Link>
-
-            <Link to={"/project"}>
-              <div className="px-2 bg-slate-800 py-2 cursor-pointer hover:bg-orange-500 text-white rounded-lg">
-                <PiShoppingBagOpenBold size={30} />
-              </div>
-            </Link>
-
-            <Link to={"/contact"}>
-              <div className="px-2 bg-slate-800 py-2 cursor-pointer hover:bg-orange-500 text-white rounded-lg">
-                <MdOutlineContactPhone size={30} />
-              </div>
-            </Link>
+      {/* Enhanced Mobile Navigation */}
+      <motion.div 
+        className="fixed bottom-0 z-40 w-full"
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+      >
+        <div className="w-full md:hidden mx-auto">
+          <div className="flex space-x-2 justify-center items-center w-full bg-black/80 backdrop-blur-md py-3 border-t border-purple-500/20">
+            {[
+              { to: "/", icon: AiFillHome, color: "from-purple-500 to-pink-500" },
+              { to: "/about", icon: AiOutlineUser, color: "from-blue-500 to-purple-500" },
+              { to: "/project", icon: PiShoppingBagOpenBold, color: "from-green-500 to-blue-500" },
+              { to: "/contact", icon: MdOutlineContactPhone, color: "from-pink-500 to-red-500" }
+            ].map((item, index) => (
+              <Link key={item.to} to={item.to}>
+                <motion.div
+                  className="relative group"
+                  whileHover={{ scale: 1.1, y: -5 }}
+                  whileTap={{ scale: 0.9 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 * index, duration: 0.5 }}
+                >
+                  <div className={`absolute -inset-2 bg-gradient-to-r ${item.color} rounded-xl blur opacity-0 group-hover:opacity-75 transition duration-300`}></div>
+                  <div className="relative px-4 py-3 bg-black/80 backdrop-blur-sm cursor-pointer text-white rounded-xl border border-white/20 group-hover:border-white/40 transition-all duration-300">
+                    <item.icon size={24} />
+                  </div>
+                </motion.div>
+              </Link>
+            ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 
